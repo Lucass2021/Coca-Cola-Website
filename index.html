@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/AbaIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <title>Coca cola Website</title>
+
+</head>
+
+<body>
+    <section class="section1">
+        <header>
+            <a href="#" target="_blank"> <img src="./assets/logo.png" alt="Coca Cola Logo" class="logo"></a>
+
+            <div class="toggleMenu" onclick="menuToggle()"></div>
+            <ul class="navegation">
+                <li> <a href="#">Home </a></li>
+                <li> <a href="#">Products </a></li>
+                <li> <a href="#">What's new </a></li>
+                <li> <a href="#">Newsletter </a></li>
+                <li> <a href="#">Contact </a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="text">
+                <h2>Taste The <br> <span>Feeling</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, non doloremque provident pariatur nobis
+                    illo
+                    architecto quod a recusandae distinctio. Veritatis recusandae laudantium eius aliquid quo iste
+                    expedita,
+                    dolor excepturi?</p>
+                <a href="#">View all Products</a>
+            </div>
+
+            <div class="images">
+                <img src="./assets/coca01.png" alt="Coca Cola Soda" class="coke">
+            </div>
+        </div>
+
+        <ul class="thumbnail">
+            <li><img src="./assets/coca01.png"
+                    onclick="imageSlider('./assets/coca01.png'); changeBackgroundColor('#e7223a')" alt="Coca Cola Soda">
+            </li>
+            <li><img src="./assets/coca02.png"
+                    onclick="imageSlider('./assets/coca02.png'); changeBackgroundColor('#1e1e1e')"
+                    alt="Coca Cola Zero Sugar">
+            </li>
+            <li><img src="./assets/coca03.png"
+                    onclick="imageSlider('./assets/coca03.png'); changeBackgroundColor('#6f1712')"
+                    alt="Coca Cola Coffe">
+            </li>
+        </ul>
+
+        <ul class="socialMedia">
+            <li> <a href="#" target="_blank"><img src="./assets/facebook.png" alt="Facebook Profile"></a></li>
+            <li> <a href="#" target="_blank"><img src="./assets/twitter.png" alt="Twitter Profile"></a></li>
+            <li> <a href="#" target="_blank"><img src="./assets/instagram.png" alt="Instagram Profile"></a></li>
+        </ul>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
